@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chilloe Candle</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="shortcut icon" type="image/png" href="/picture/favicon.ico"/>
+</head>
+<body>
+
+<!-- -- -->
+    <section id="voucher">
+        <div class="container d-flex center">
+            <p>FREE SHIPPING ON ALL ORDERS OVER 2,000,000VND</p>
+        </div>
+    </section>
+    
+<!-- --Header-- -->
+    <section id="header">
+        <div class="container d-flex j-between a-center">
+            <img class="logo" src="picture/logo.png" alt="">
+        <ul class="nav d-flex">
+            <li class="nav-item"><a href="">Home</a></li>
+            <li class="nav-item"><a href="">Product</a></li>
+            <li class="nav-item"><a href="">Special Set</a></li>
+            <li class="nav-item"><a href=""><i class="fas fa-user"></i></li>
+            <li class="nav-item"><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+            <li class="nav-item"><a href=""><i class="fas fa-bars"></i></a></li>
+        </ul>
+        </div>
+    </section>
+
+
+ <!-- --Slide Show-- -->
+ <div class="slideshow-container">
+    <div class="mySlides">
+        <img src="picture/SildeS 2.png" style="width: 100%" alt="">
+        <div class="text">Chill With Chilloe</div>
+    </div>
+
+    <div class="mySlides">
+        <img src="picture/SlideS 1.png" style="width: 100%" alt="">
+        <div class="text">Chill With Chilloe</div>
+    </div>
+
+<div class="mySlides">
+    <img src="picture/SlideS 3.png" style="width: 100%"  alt="">
+    <div class="text">Chill With Chilloe</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)"><i class="fas fa-angle-left fa-3x"></i></a>
+<a class="next" onclick="plusSlides(1)"><i class="fas fa-angle-right fa-3x"></i></a>
+</div>
+<br>
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<!-- --javascript-- -->
+<script>
+    var slideIndex = 0;
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++){
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length){
+            slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 3000);
+    }
+    showSlides();
+</script>
+
+
+<!-- Main heading section -->
+<!-- Product -->
+<br>
+
+<section id="item-title">
+    <div class="d-flex center title">
+        <h1> Product</h1>
+    </div>
+</section>
+
+<section id="item-title">
+    <div class="d-flex center">
+        <h5 class="content">More</h5>
+        <li class="more"><i class="fas fa-angle-right fa-2x"></i></li>
+    </div>
+</section>
+
+<section class="feature">
+    <div class="box">
+        <div class="row">
+            <div class="col">
+                <img class="main" src="picture/1.jpg" alt="">
+                <div class="content">
+                <h3>Rose Soy</h3>
+                <br>
+                <h2>229,000<u>đ</u></h2>
+                </div>
+                <div class="shopping">
+                    <li class="cart"><i class="fas fa-heart"></i></li>
+                    <li class="cart"><i class="fas fa-search-plus"></i></li>
+                    <li class="cart"><i class="fas fa-shopping-cart"></i></li>
+                </div>
+            </div>
+           
+            <div class="col">
+                <img class="main" src="picture/2.jpg" alt="">
+                <div class="content">
+                <h3>Lavender Soy</h3>
+                <br>
+                <h2>229,000<u>đ</u></h2>
+                </div>
+                <div class="shopping">
+                    <li class="cart"><i class="fas fa-heart"></i></li>
+                    <li class="cart"><i class="fas fa-search-plus"></i></li>
+                    <li class="cart"><i class="fas fa-shopping-cart"></i></li>
+                </div>
+            </div>
+            <div class="col">
+                <img class="main" src="picture/3.jpg" alt="">
+                <div class="content">
+                <h3>Maple Soy</h3>
+                <br>
+                <h2>219,000<u>đ</u></h2>
+                </div>
+                <div class="shopping">
+                    <li class="cart"><i class="fas fa-heart"></i></li>
+                    <li class="cart"><i class="fas fa-search-plus"></i></li>
+                    <li class="cart"><i class="fas fa-shopping-cart"></i></li>
+                </div>
+            </div>
+            <div class="col">
+                <img class="main" src="picture/4.jpg" alt="">
+                <div class="content">
+                <h3>Cinnamon Soy</h3>
+                <br>
+                <h2>269,000<u>đ</u></h2>
+                </div>
+                <div class="shopping">
+                    <li class="cart"><i class="fas fa-heart"></i></li>
+                    <li class="cart"><i class="fas fa-search-plus"></i></li>
+                    <li class="cart"><i class="fas fa-shopping-cart"></i></li>
+                </div>
+            </div>
+            <div class="col">
+                <img class="main" src="picture/5.jpg" alt="">
+                <div class="content">
+                <h3>Orange Soy</h3>
+                <br>
+                <h2>289,000<u>đ</u></h2>
+                </div>
+                <div class="shopping">
+                    <li class="cart"><i class="fas fa-heart"></i></li>
+                    <li class="cart"><i class="fas fa-search-plus"></i></li>
+                    <li class="cart"><i class="fas fa-shopping-cart"></i></li>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Special Set -->
+<br>
+<section id="item-title">
+    <div class="d-flex center title">
+        <h1> Special Set</h1>
+    </div>
+</section>
+<section id="item-title">
+    <div class="d-flex center">
+        <h5 class="content">More</h5>
+        <li class="more"><i class="fas fa-angle-right fa-2x"></i></li>
+    </div>
+</section>
+<section class="feature">
+    <div class="box">
+        <div class="row">
+            <div class="col">
+                <img class="main" src="picture/set 11.jpg" alt="">
+                <div class="content">
+                <h3>Be Mine</h3>
+                <br>
+                <h2>459,000<u>đ</u></h2>
+                </div>
+                <div class="shopping">
+                    <li class="cart"><i class="fas fa-heart"></i></li>
+                    <li class="cart"><i class="fas fa-search-plus"></i></li>
+                    <li class="cart"><i class="fas fa-shopping-cart"></i></li>
+                </div>
+            </div>
+            <div class="col">
+                <img class="main" src="picture/set 2.jpg" alt="">
+                <div class="content">
+                <h3>Valentine</h3>
+                <br>
+                <h2>459,000<u>đ</u></h2>
+                </div>
+                <div class="shopping">
+                    <li class="cart"><i class="fas fa-heart"></i></li>
+                    <li class="cart"><i class="fas fa-search-plus"></i></li>
+                    <li class="cart"><i class="fas fa-shopping-cart"></i></li>
+                </div>
+            </div>
+            <div class="col">
+                <img class="main" src="picture/set 3.jpg" alt="">
+                <div class="content">
+                <h3>Tobacco Noir</h3>
+                <br>
+                <h2>559,000<u>đ</u></h2>
+                </div>
+                <div class="shopping">
+                    <li class="cart"><i class="fas fa-heart"></i></li>
+                    <li class="cart"><i class="fas fa-search-plus"></i></li>
+                    <li class="cart"><i class="fas fa-shopping-cart"></i></li>
+                </div>
+            </div>
+            <div class="col">
+                <img class="main" src="picture/set 4.jpg" alt="">
+                <div class="content">
+                <h3>Sleep Well</h3>
+                <br>
+                <h2>439,000<u>đ</u></h2>
+                </div>
+                <div class="shopping">
+                    <li class="cart"><i class="fas fa-heart"></i></li>
+                    <li class="cart"><i class="fas fa-search-plus"></i></li>
+                    <li class="cart"><i class="fas fa-shopping-cart"></i></li>
+                </div>
+            </div>
+            <div class="col">
+                <img class="main" src="picture/set 5.jpg" alt="">
+                <div class="content">
+                <h3>Vallina Sugar Cookie</h3>
+                <br>
+                <h2>599,000<u>đ</u></h2>
+                </div>
+                <div class="shopping">
+                    <li class="cart"><i class="fas fa-heart"></i></li>
+                    <li class="cart"><i class="fas fa-search-plus"></i></li>
+                    <li class="cart"><i class="fas fa-shopping-cart"></i></li>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Feedback -->
+<br>
+<section id="item-title">
+    <div class="d-flex center title">
+        <h1> Feedback</h1>
+    </div>
+</section>
+<section id="item-title">
+    <div class="d-flex center">
+        <h5 class="content">More</h5>
+        <li class="more"><i class="fas fa-angle-right fa-2x"></i></li>
+    </div>
+</section>
+<section class="feature">
+    <div class="box">
+        <div class="row">
+            <div class="col">
+                <img class="main" src="picture/fb1.png" alt="">
+            </div>
+            <div class="col">
+                <img class="main" src="picture/fb2.jpg" alt="">
+            </div>
+            <div class="col">
+                <img class="main" src="picture/fb3.png" alt="">
+            </div>
+            <div class="col">
+                <img class="main" src="picture/fb4.png" alt="">
+            </div>
+            <div class="col">
+                <img class="main" src="picture/fb5.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<section id="footer">
+        <div class="container">
+            <div class="row d-flex"> 
+            <div class="info">
+                <ul>
+                <li>OUR POLICY</li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Payment<a></li>
+                <li><a href="">Shipping<a></li>
+                <li><a href="">Refund & Return</a></li>
+                <li><a href="">Term Of Service<a></li>
+                </ul>
+            </div>   
+            <div class="info">
+                <ul>
+                <li>CUSTOMER SERVICE</li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Track Your Order</a></li>
+                </ul>
+            </div>
+            <div class="info">
+                <ul>
+                <li>SOCIAL MEDIA</li>
+                <li class="f-item"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li class="f-item"><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li class="f-item"><a href=""><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="info">
+                <ul>
+                <img class="img-fo" src="picture/logo.png" alt="">
+                <li><a href="">Address: 22 Le Duc Tho St, Go Vap District, Ho Chi Minh City, Viet Nam.</a></li>
+                <li><a href="">Call us at (+84)866122022</a></li>
+                <li><a href="">support@chilloe.com</a></li>
+                
+                
+                </ul>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="final-page">
+      <div class="container d-flex j-between">
+        Copyright © 2021 Chilloe. Powered by Trarooc
+        </div>
+    </section>
+</body>
+</html>
